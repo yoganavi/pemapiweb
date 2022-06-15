@@ -1,0 +1,27 @@
+<body>
+	<link class="navbarCss" rel="stylesheet" href="/component/footer.css">
+	
+	<div class="footer">
+		<div class="wrap1"></div>
+		<div class="wrap2">
+			<p>
+				PEMAPI adalah merek milik PT. Coco Profire Indonesia <span>|</span> 
+			</p>
+			<p>
+				<i class="far fa-copyright"></i> 2022 PEMAPI
+			</p>
+		</div>
+	</div>
+	
+
+	<script>
+		// css rename for navbar % footer
+		let verCss=Math.floor(Math.random() * 100);
+		document.querySelectorAll('.navbarCss').forEach( e => {
+			let hrefPos = e.getAttribute('href').indexOf('.css');
+			e.href=e.getAttribute('href').slice(0,hrefPos)+".css?v="+verCss;
+		});
+		// css rename for navbar % footer
+	</script>
+
+</body>

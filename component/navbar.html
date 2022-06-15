@@ -1,0 +1,61 @@
+<head>
+	<link class="navbarCss" rel="stylesheet" href="/component/navbar.css?v=2">
+
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/ce27987ac1.js" crossorigin="anonymous"></script>
+	<!-- materialize -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<!-- <div class="loadingpage">
+
+	</div> -->
+	<div class="navbar">
+		<img class="navItem navImg" src="/img/logo/PNG LOGO DAN STAMPLE/logo-resize.webp" alt="">
+		<a href="/" class="navItem navBrand">
+
+		</a>
+		<div class="headnavmobile">
+			<p class="teks">
+				PEMAPI
+			</p>
+			<i class="fas fa-bars hambmenu"></i>
+		</div>
+		<div class="navItem navLinks">
+			<div class="navLinkWrap">
+				<a href="/pages/pemapi-app.html" class="navLink pemapi"><i class="fas fa-mobile-alt"></i>pemapi app</a>
+				<a href="/index.html" class="navLink home"><i class="fa-solid fa-house"></i>home</a>
+			</div>
+			<div class="navLinkWrap">
+				<a href="/pages/product.html" class="navLink">product</a>
+			</div>
+			<div class="navLinkWrap">
+				<a href="" class="navLink">news</a>
+			</div>
+			<div class="navLinkWrap">
+				<a href="/pages/contact-us.html" class="navLink">contact us</a>
+			</div>
+			<!-- <div class="navLinkWrap">
+				<a href="" class="navLink"><i class="fas fa-shopping-bag"></i>shop</a>
+			</div> -->
+		</div>
+	</div>
+
+	<script src="/js/scroll-out.min.js"></script>
+
+	<script>
+		let scriptselect=document.querySelector('.scriptselect'),
+		navLinks = document.querySelector('.navLinks'),
+		hambmenu = document.querySelector('.hambmenu'),		
+		pageid = document.querySelector('#navbar').className;
+
+		if(pageid!='home'){scriptselect.src='/js/navbar2.js?v=1'};
+		if(pageid==='contact-us'){scriptselect.src='/js/contactus.js?v=1'};		
+		if(pageid==='pemapi-app'){scriptselect.src='/js/pemapi-app.js?v=1'};		
+		
+		hambmenu.addEventListener('click',()=>{
+			navLinks.classList.toggle('show');
+		});
+	</script>
+	<script class="scriptselect" src="/js/navbar.js?v=1"></script>
+</body>

@@ -1,0 +1,530 @@
+/* root ikut footer.css */
+	html{
+		font-size: var(--parentfontsize);
+	}
+	body{
+		/* font-family: 'Nunito', sans-serif !important; */
+		background: white !important;
+
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	/* scroll bar */
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+	::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);     
+		background: whitesmoke;    
+	}
+	::-webkit-scrollbar-thumb {
+		background: rgb(162, 162, 162);
+		border-radius: 6px;
+	}
+	/* /scroll bar */
+
+	/* navbar */
+	.navbar{
+		background: transparent !important;
+	}
+	.navLinkWrap .navLink{
+		color: white;
+	}
+	.navbar.scroll.pemapi-app {
+		background: whitesmoke !important;
+	}
+	.navbar.scroll.pemapi-app .navLinkWrap .navLink{
+		color: black;
+	} 
+	.navbar.scroll.pemapi-app .navLinkWrap .navLink:hover{
+		color: lightseagreen;
+	} 
+	.navLink.pemapi{
+		display: none;
+	}
+	.navLink.home{
+		display: inline-flex !important;
+	}
+	/* / navbar */
+
+	.seca{
+		height: 100vh;
+		max-height: 50rem;
+		background: #009FCA url(/img/bg/background\ app.png);
+		background-size: 100% 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.seca p{
+		color: white;
+	}
+	.a1{
+		margin: 0 7% 4rem 3%;
+		/* background: #000; */
+	}
+	.a1 img{
+		image-rendering: optimizeSpeed;
+		width: 55%;
+		display: block;
+		margin: 0 auto;
+	}
+	.a1 p{
+		text-transform: uppercase;
+		font-weight: 400;
+		line-height: 3.1rem;
+	}
+	.a1 p:nth-of-type(1){
+		font-size: 3.5rem;
+		margin: 2rem 0 0 0;
+		font-weight: 500;
+	}
+	.a1 p:nth-of-type(2){
+		font-size: 2rem;
+	}
+	.a2{
+		/* background: chartreuse; */
+		width: 65%;
+		min-width: 40rem;
+		max-width: 46rem;
+		margin: 0 0 2rem 0;
+	}
+
+	.a2 img{
+		width: 100%;
+	}
+	.a3{
+		margin: 0 3% 4rem -3%;
+		/* margin: 0 3% 14rem 6%; */
+		/* background: #000; */
+	}
+	.a3 p{
+		font-size: var(--fsL);
+		/* font-size: 2.5rem; */
+		/* font-weight: 600; */
+		font-weight: 500;
+		/* text-transform: capitalize; */
+		text-transform: uppercase;
+		max-width: 40rem;
+	}
+
+	.secb{
+		background: url(/img/bg/bg-pemapi-app.png);
+		/* height: 2190px; */
+		height: 146rem;
+		background-size: 100% 100%;
+		/* background-position: 0px 20px; */
+		background-repeat: no-repeat;
+	}
+	.b1{
+		display: grid;
+		grid-template-columns: 1fr 27rem;
+		/* grid-template-columns: 1fr .35fr; */
+		position: relative;
+		padding: 7.5rem 0 10rem 0;
+		/* padding: 120px 0 190px 0; */
+		align-items: center;
+		/* background: #009eca40; */
+	}
+	.b1::before{
+		content: '';
+		width: 53rem;
+		height: 51rem;
+		top: 0;
+		right: 0;
+		background: #C6F5FF;
+		position: absolute;
+		z-index: 0;
+		/* clip-path: circle(51.3% at 90% 46%); */
+		/* clip-path: circle(51.3% at 78% 46%); */
+		/* clip-path: circle(57.0% at 85% 40%); */
+		clip-path: circle(57.0% at 85% 42%);
+		/* border-top-left-radius: 50%;
+		border-bottom-left-radius: 50%; */
+		}
+	.b1 .teks{
+		z-index: 1;
+		padding: 0 0 0 10%;
+	}
+	.b1 .teks p:nth-of-type(1){
+		font-size: 3.2rem;
+		font-weight: 400;
+		width: 80%;
+		line-height: 4.5rem;
+	}
+	.b1 .teks p:nth-of-type(2){
+		font-size: 2.1rem;
+		margin: 3.8rem 0 0 0;
+	}
+	.b1 .teks p:nth-of-type(3){
+		font-size: 1.3rem;
+		margin: 1rem 0 0 0;
+	}
+	.b1 .pict{
+		/* border: 1px solid black; */
+		z-index: 1;
+	}
+	.b1 .pict img{
+		width: 15rem;
+		margin: 0 0 0 3rem;
+	}
+	.b1.b2{
+		grid-template-columns: 27rem 1fr;
+	}
+	.b1.b2::before{
+		content: '';
+		width: 53rem;
+		height: 59rem;
+		top: -5rem;
+		left: 0;
+		background: #C6F5FF;
+		position: absolute;
+		z-index: 0;
+		clip-path: circle(48.6% at 18% 50%);
+		/* border-top-left-radius: 50%;
+		width: 80%;
+		border-bottom-left-radius: 50%; */
+	}
+	.b1.b2 .teks{ 
+		/* background: #009FCA; */
+		text-align: right;
+		padding: 0 10% 0 19rem;
+	}
+	.b1.b2 .teks p:nth-of-type(1){
+		width: 100%;
+	}
+	.b1.b2 .teks p:nth-of-type(2){
+		font-size: 1.3rem;
+		margin: 2rem 0 0 0;
+	}
+	.b1.b2 .pict img{
+		width: 59%;
+		margin: 0 0 0 6rem;
+	}
+	.b1.b3{
+		/* background: rgba(128, 255, 0, 0.231); */
+	}
+	.b1.b3::before{
+		content: '';
+		width: 52rem;
+		height: 50rem;
+		top: -2rem;
+		right: 0;
+		background: #C6F5FF;
+		position: absolute;
+		z-index: 0;
+		/* clip-path: circle(48.6% at 86% 50%); */
+		clip-path: circle(49.3% at 78% 50%);
+	}
+	.b1.b3 .pict{
+		/* border: 1px solid black; */
+	}
+	.b1.b3 .pict img{
+		margin: 0 0 0 5rem;
+	}
+	.b1.b3 .teks p:nth-child(2){
+		font-size: 1.3rem;
+		max-width: 50rem;
+	}
+	.b1.b3 .teks p:nth-child(3){
+		font-weight: 500;
+	}
+
+
+	/* ! data scrol*/
+	[data-scroll='in']{
+		opacity: 1;
+	}
+	[data-scroll='out']{
+		opacity: 0;
+	}
+	/* ! // data scroll */
+	
+	/* ! // swipper */
+	
+	/* ! // swipper */
+
+	
+
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+@media only screen and (max-width: 1400px){}
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+@media only screen and (max-width: 1300px){
+	html{
+		font-size: var(--tabfontsize);
+	}
+}
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !-----------------------------TAB(960)---------------------------------------- */
+@media only screen and (max-width: 1000px){
+	html{
+		font-size: var(--tabfontsize2);
+	}
+	.seca{
+		max-height: 50vw;
+		/* max-height: 40rem; */
+		background: #009FCA url(/img/bg/background\ app.png);
+		background-size: 100% 100%;
+	}
+	.a1{
+		margin: 0 3rem 7rem 3rem;
+		/* background: #000; */
+	}
+	.a1 img{
+		width: 7rem;
+		display: block;
+		margin: 0 auto;
+	}
+	.a1 p{
+		text-transform: uppercase;
+		font-weight: 400;
+		line-height: 2rem;
+	}
+	.a1 p:nth-of-type(1){
+		font-size: 2.5rem;
+		margin: 15px 0 0 0;
+		font-weight: 500;
+	}
+	.a1 p:nth-of-type(2){
+		font-size: 1.7rem;
+	}
+	.a3{
+		margin: 0 3rem 7rem 0rem;
+	}
+	
+
+}
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !--------------------------------NORMAL PONSEL-------------------------------------- */
+@media only screen and (max-width: 700px){
+	html{
+		font-size: var(--tabfontsize3);
+	}
+	body{
+		font-family: var(--fontfamilyreg);
+		font-size: var(--fsS);
+	}
+	
+	/* navbar */
+	.navbar.scroll.pemapi-app .navLinkWrap .navLink{
+		color: white;
+	}
+	.navbar.pemapi-app .headnavmobile i, .navbar.pemapi-app .headnavmobile p{
+		color: gray;
+	} 
+	/* / navbar */
+
+	.seca{
+		height: fit-content;
+		max-height: fit-content;
+		background: #009FCA url(/img/bg/background\ app.png);
+		background-size: cover;
+		display: grid;
+		grid-template-areas: 
+		'a'
+		'b'
+		'c'
+		;
+		justify-content: unset;
+		justify-items: center;
+		align-items: center;
+		padding: 0 0 4rem 0;
+	}
+	.seca p{
+		color: white;
+	}
+	.a1{
+		margin: 0 0% 0rem 0%;
+		/* background: #000; */
+		grid-area: c;
+		/* width: 100%; */
+		display: grid;
+		justify-items: center;
+	}
+	.a1 img{
+		image-rendering: optimizeSpeed;
+		width: 30%;
+		display: block;
+		margin: 0 auto;
+	}
+	.a1 p{
+		text-transform: uppercase;
+		font-weight: 400;
+		line-height: 3.1rem;
+	}
+	.a1 p:nth-of-type(1){
+		font-size: 3.3rem;
+		margin: 2rem 0 0 0;
+		font-weight: 500;
+	}
+	.a1 p:nth-of-type(2){
+		font-size: 1.5rem;
+	}
+	.a2{
+		grid-area: a;
+		/* background: chartreuse; */
+		width: unset;
+		min-width: 0rem;
+		max-width: unset;
+		margin: 12rem 0 0rem 0;
+	}
+
+	.a2 img{
+		width: 85%;
+		display: block;
+		margin: 0 auto;
+	}
+	.a3{
+		grid-area: b;
+		margin: 5rem 7% 5rem 7%;
+		/* background: #000; */
+	}
+	.a3 p{
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 400;
+		text-transform: capitalize;
+		max-width: unset;
+	}
+	
+	.secb{
+		background: url(/img/bg/bg-pemapi-app.png);
+		height: fit-content;
+		background-size: contain;
+		background-repeat: repeat;
+	}
+	.b1{
+		display: grid;
+		grid-template-columns: unset;
+		/* background: #000; */
+		position: relative;
+		padding: 7.5rem 0 7.5rem 0;
+		justify-items: center;
+	}
+	.b1::before{
+		content: '';
+		width: 70%;
+		height: 50%;
+		top: 0;
+		right: 0;
+		background: #C6F5FF;
+		position: absolute;
+		z-index: 0;
+		/* clip-path: circle(51.3% at 90% 46%); */
+		/* clip-path: circle(51.3% at 78% 46%); */
+		/* clip-path: circle(57.0% at 85% 40%); */
+		clip-path: circle(57.0% at 85% 42%);
+		/* border-top-left-radius: 50%;
+		border-bottom-left-radius: 50%; */
+		}
+	.b1 .teks{
+		z-index: 1;
+		width: 80%;
+		padding: 0 0 0 0%;
+	}
+	.b1 .teks p:nth-of-type(1){
+		font-size: 3.2rem;
+		font-weight: 400;
+		width: 100%;
+		line-height: 4.2rem;
+	}
+	.b1 .teks p:nth-of-type(2){
+		font-size: 2.1rem;
+		margin: 1.2rem 0 0 0;
+	}
+	.b1 .teks p:nth-of-type(3){
+		font-size: 1.3rem;
+		margin: 1rem 0 0 0;
+	}
+	.b1 .pict{
+		/* border: 1px solid black; */
+		margin: 4rem 0 0 0rem;
+		z-index: 1;
+	}
+	.b1 .pict img{
+		width: 75%;
+		display: block;
+		margin: 0 auto;
+	}
+	.b1.b2{
+		grid-template-columns: unset;
+		/* background: blue; */
+
+	}
+	.b1.b2::before{
+		content: '';
+		width: 70%;
+		height: 50%;
+		top: 0rem;
+		left: 0;
+		background: #C6F5FF;
+		position: absolute;
+		z-index: 0;
+		clip-path: circle(48.6% at 18% 50%);
+		/* border-top-left-radius: 50%;
+		width: 80%;
+		border-bottom-left-radius: 50%; */
+	}
+	.b1.b2 .teks{ 
+		/* background: #009FCA; */
+		text-align: left;
+		padding: 0 0% 0 0rem;
+		margin: 4rem 0 0 0;
+	}
+	.b1.b2 .teks p:nth-of-type(1){
+		width: 100%;
+	}
+	.b1.b2 .teks p:nth-of-type(2){
+		font-size: 1.3rem;
+		margin: 1.2rem 0 0 0;
+	}
+	.b1.b2 .pict img{
+		width: 75%;
+		display: block;
+		margin: 0 auto;
+	}
+	.b1.b3{
+		/* background: rgba(128, 255, 0, 0.231); */
+	}
+	.b1.b3::before{
+		content: '';
+		width: 70%;
+		height: 50%;
+		top: 0rem;
+		right: 0;
+		background: #C6F5FF;
+		position: absolute;
+		z-index: 0;
+		/* clip-path: circle(48.6% at 86% 50%); */
+		clip-path: circle(49.3% at 78% 50%);
+	}
+	.b1.b3 .pict{
+		/* border: 1px solid black; */
+	}
+	.b1.b3 .pict img{
+		display: block;
+		margin: 0 auto;
+	}
+	.b1.b3 .teks p:nth-child(2){
+		font-size: 1.3rem;
+		max-width: 100%;
+	}
+	.b1.b3 .teks p:nth-child(3){
+		font-weight: 500;
+	}
+}
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !----------------------------SMALL PONSEL------------------------------------------ */
+@media only screen and (max-width: 576px){}

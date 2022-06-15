@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+
+:root {
+	--parentfontsize: 15px;
+	--tabfontsize: 12px;
+	--tabfontsize2: 1vw;
+	--tabfontsize3: 10px;
+	--parentfontsizemobile: 20px;
+	--fsSS: .8rem;
+	--fsS: 1rem;
+	--fsM: 1.5rem;
+	--fsML: 2rem;
+	--fsL: 2.5rem;
+	--fsXL: 3rem;
+	--fw-light: 200;
+	--fw-normal: 300;
+	--fw-medium: 400;
+	--fw-bold: 500;
+	--judulLg: 1.7vw;
+	--judulSml: 1.4vw;
+	--judulMobile: 7vw;
+	--bg: rgb(22, 20, 34) !important;
+	--boxShadow: 0px 0px 7px 6px rgba(128, 128, 128, 0.322);
+	--boxShadow2: 1px 5px 5px 1px rgba(128, 128, 128, 0.322);
+	--boxShadow3: 0px 0px 7px 4px rgba(128, 128, 128, 0.1);
+	--fontfamilyreg: 'Nunito', sans-serif;
+	--merah: #ED3237;
+	--biru: #0000FF;
+	/* --merah: #373435; */
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+/* html{
+	font-size: var(--parentfontsize);
+} */
+
+/* ! body max-width for all pages */
+body{
+	background:whitesmoke;
+	width: 100%;
+	max-width: 2000px;
+	margin: 0 auto;
+	/* font-family: 'Nunito', sans-serif; */
+	font-family: 'Kanit', sans-serif;
+	font-weight: var(--fw-normal);
+	position: relative;
+}
+/* ! / body max-width for all pages */
+
+.footer{
+	width: 100%;
+	/* height: 100px; */
+	background: #EEEDED;
+	padding: 80px 0 30px 0;
+	z-index: 2 ;
+	position: relative;
+}
+.footer>.wrap2{
+	display: flex;
+	justify-content: center;
+}
+.footer>.wrap2 span{
+	margin: 0 0 0 .56rem;
+}
+.footer>.wrap2 p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1rem;
+	text-align: center;
+}
+.footer>.wrap2 p i{
+	font-size: .7rem;
+	margin: 0 3px 0 7px;
+}
+
+
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+@media only screen and (max-width: 1400px){}
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px){}
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !-----------------------------TAB----------------------------------------- */
+@media only screen and (max-width: 960px){
+	
+
+}
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !--------------------------------NORMAL PONSEL-------------------------------------- */
+@media only screen and (max-width: 700px){
+	.footer{
+		width: 100%;
+		background: #EEEDED;
+		padding: 7rem 10% 30px 10%;
+		z-index: 2 ;
+		position: relative;
+	}
+	.footer>.wrap2{
+		display: flex;
+		flex-direction: column;
+		justify-content: unset;
+		align-items: center;
+	}
+	.footer>.wrap2 span{
+		display: none;
+	}
+	.footer>.wrap2 p{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.1rem;
+		text-align: center;
+	}
+	.footer>.wrap2 p i{
+		font-size: .7rem;
+		margin: 0 3px 0 7px;
+	}
+	
+}
+/* !---------------------------------------------------------------------- */
+/* !---------------------------------------------------------------------- */
+/* !----------------------------SMALL PONSEL------------------------------------------ */
+@media only screen and (max-width: 576px){}
