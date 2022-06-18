@@ -166,7 +166,7 @@
 	color: white;
 	width: fit-content;
 	padding: 1rem 3rem;
-	background: blue;
+	background: #2F97F0;
 	margin: 0 auto;
 	clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
 	border-radius: 10px;
@@ -324,7 +324,7 @@
 	color: white;
 	width: fit-content;
 	padding: 1rem 3rem;
-	background: blue;
+	background: #2F97F0;
 	margin: 1rem 0 0 0;
 	clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
 	border-radius: 10px;
@@ -504,65 +504,53 @@
 
 .secA.secF{
 	/* background: gold; */
-	padding: 0px 0 0px 0;
+	padding: 100px 0 0px 0;
 	height: calc(100% - 0px);
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: min-content;
-	grid-auto-rows: min-content;
-	align-content: end;
+	/* grid-template-rows: min-content;
+	grid-auto-rows: min-content; */
+	align-content: center;
 }
-.f1{
+.f1a.row{
 	/* background: darkorchid; */
-}
-.f1 p{
-	padding: 0 15%;	
-	font-size: 1.5rem;
-	font-weight: 300;
-	text-align: center;
-}
-.f1a{
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	gap: 50px;
-	margin: 50px 0 0 0;
 }
-.f1a img{
-	width: 21%;
-	height: min-content;
+.f1a.row .col{
+	width: 28%;
 }
-.f2{
-	background: #0000ff50;
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-template-rows: min-content;
-	align-content: center;
-	align-items: center;
-	height: 130px;
-	margin: 50px 0 0 0;
+.f1a.row .col:nth-of-type(2){
+	width: 30%;
 }
-.f2 p{
-	font-size: var(--fsM);
-	justify-self: center;
-	font-weight: 500;
+.f1a .col.tengah .btn{
+	background: #2F97F0;
+	border-radius: 5px;
+
 }
-.f2-btn{
-	outline: 2px solid var(--biru);
-	width: min-content;
-	padding: 10px 70px;
-	background: var(--biru);
-	border-radius: 10px;
-	font-size: var(--fsM);
-	color: whitesmoke;
+.f1a .card{
+	border-radius: 7px;
+}
+.f1a .card img{
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+.f1a .col.tengah .card .card-action{
+	border-radius: 7px;
+	/* border: 2px solid red; */
+}
+
+.navBrandAnimate,.secAnimate,.secA.secB,.secA.secC,.secA.secD,.secA.secF,.secA.secH,.secA.secI,.secA.footer{
+	display: none !important;
 }
 
 .secA.secG{
-	/* background: gold; */
+	display: none;
 	padding: 0px 0 0px 0;
 	height: 100vh;
 	position: relative;
 }
+
 .swiper {
 	width: 50%;
 	height: 30%;
