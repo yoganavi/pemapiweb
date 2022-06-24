@@ -56,6 +56,9 @@ ScrollOut({
 		if(el.classList[1]==='secI'){
 			document.querySelector('.navbar').style.opacity='0';
 			pemapi.style.opacity='0';
+		}
+		if(el.classList[1]==='i2img'){
+				el.classList[1].add('animate')
 		}else{
 			document.querySelector('.navbar').style.opacity='1';
 			pemapi.style.opacity='1';
@@ -156,6 +159,8 @@ arrayy=[
 arrayy.forEach(e => {
 	console.log(e.umur);
 });
+
+
 
 
 
