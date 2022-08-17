@@ -27,28 +27,33 @@
 	/* /scroll bar */
 
 	/* navbar */
-	.navbar.home{
+	.navbar[data-navbar="trans"]{
 		background: transparent;
+		padding: .53rem 0 .5rem 0;
 	}
-	.navbar.home.scroll.bg-transp{
-		background: transparent;
-	}
-	.navLink{
-		color: white !important;
-	}
-	.navLink.txtblack{
-		color: black !important;
-	}
-	.navBrandAnimate{
-		text-transform: uppercase;
-		position: absolute;
-		pointer-events: none;
+	.navLinks[data-navlink="white"] a{
 		color: white;
+	}
+	/* .navbar.home.scroll.bg-transp{
+		background: transparent;
+	} */
+	/* .navLink{
+		color: white !important;
+	} */
+	/* .navLink.txtblack{
+		color: black !important;
+	} */
+	.navBrandAnimate{
+		text-decoration: none;
+		text-transform: uppercase;
+		/* position: absolute; */
+		pointer-events: none;
+		color: red;
 		z-index: 3;
-		font-size: 5.5rem;
+		font-size: 4.5rem;
 		opacity: 1;
 		font-family: 'Press Start 2P', cursive;
-		left: 5%;
+		left: 8%;
 	}
 	.navBrandAnimate.home{
 		transform: translateX(0%) scale(1);
@@ -56,10 +61,10 @@
 	}
 	.navBrandAnimate.sliding{
 		pointer-events: inherit;
-		top: 0rem !important;
-		left: 3%;
+		top: -2% !important;
+		left: 7%;
 		color: black;
-		transform: scale(.25) translateY(-85%) ;
+		transform: scale(.45) translateY(0px) ;
 		transition: .7s ease-in-out;
 	}
 	.navBrandAnimate.sliding.txtwhite{
@@ -87,30 +92,34 @@
 	}
 
 	.secA{
+		position: relative;
 		scroll-snap-align: start;
 		overflow: hidden;
 	}
 	section .secA.secAnimate{
-		padding: 0px 0 3rem 5%;
+		padding: 0px 0 3rem 0%;
 		height: calc(100vh - 0px) ;
-		background: chocolate;
+		/* background: chocolate; */
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 	}
 	.secA1{
-		animation-duration: 1.5s !important;
+		opacity: 1 !important;
+		/* animation-duration: 1.5s !important; */
 	}
-	.secAnimate img{
+
+	/* .secAnimate img{
 		width: 20%;
 		max-width: 21rem;
 		position: absolute;		
 		bottom: 16rem;
 		left: 45rem;
-	}
+	} */
+
 	.secAnimate p{
 		text-transform: uppercase;
-		color: white;
+		margin: 0rem 0 2rem 0;
 	}
 	.secAnimate p:nth-of-type(1){
 		font-size: var(--fsL);
@@ -130,7 +139,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	background: #101920;
+	/* background: #101920; */
 	height: 100%;
 	padding: 0 0 4rem 0;
 	z-index: 0;
@@ -138,7 +147,7 @@
 }
 .secB::before{
 	content: '';
-	background: white;
+	background: #808080;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -154,16 +163,17 @@
 .b1 p{
 	text-align: center;
 	font-size: var(--fsXL);
-	font-weight: 500;
-	color: white;
+	font-weight: 600;
+	color: black;
 }
 .b1 .button{
 	/* all: unset; */
 	display: block;
 	text-transform: uppercase;
+	text-decoration: none;
 	font-weight: 500;
 	font-size: var(--fsM);
-	color: white;
+	color: black;
 	width: fit-content;
 	padding: 1rem 3rem;
 	background: #2F97F0;
@@ -186,16 +196,17 @@
 	justify-content: flex-end;
 	width: 38%;
 	/* background: chocolate; */
+	color: white;
 }
 /* judul */
 .b2a p:nth-of-type(1){
 	font-size: var(--fsML);
-	font-weight: 600;
+	font-weight: 500;
 	margin: 1rem 0 0 0;
 }
 .b2a p:nth-of-type(2){
 	font-size: 1.2rem;
-	font-weight: 400;
+	font-weight: 300;
 }
 .b2a img{
 	height: fit-content;
@@ -842,8 +853,9 @@
 		justify-content: flex-end;
 		padding: 0px 0 20vh 5%;
 	}
-	.secA1{
+	.secA1 h2{
 		animation-duration: 1.5s !important;
+		margin: 0;
 	}
 	.secAnimate img{
 		width: 20%;

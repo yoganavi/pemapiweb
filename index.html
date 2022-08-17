@@ -16,13 +16,15 @@
 	href="/css/animate-min.css"
   />
 	<!-- /animate.css -->
-	
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<!-- swiper css -->
 	<link
 	rel="stylesheet"
 	href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
+	<!-- user css -->
 	<link class="mycss" rel="stylesheet" href="/css/index.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!-- fontawesome -->
 	<script src="https://kit.fontawesome.com/ce27987ac1.js" crossorigin="anonymous"></script>
@@ -44,19 +46,54 @@
 
 	</div>
 
-	<a href="/" data-scroll="in" class="navBrandAnimate">
+	<!-- <a href="/" data-scroll="in" class="navBrandAnimate">
 		pemapi
-	</a>
+	</a> -->
 	
-	<section id="kontainer">
+	<section id="kontainer" class="">
 		<div class="secA secAnimate">
-			<p data-scroll class="bounceInDown secA1">
-				hai, kenalin
-			</p>
-			<p data-scroll class="fadeIn">
-				sistem integrasi alat pemadam api pintar
-			</p>
-			<img src="/img/logo/logo pemapi kosongan.png" alt="">
+			<div class="container mt-5 firstContainer" >
+				<div class="row">
+					<div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+						<div data-scroll="" class="Text1 secA1">
+							<h2>Hai, kenalin </h2>
+							<a href="/" data-scroll class="navBrandAnimate">
+								pemapi
+							</a>
+						</div>
+						<div  class="Text2">
+							<!-- <h1>ini<span>Pemapi</span></h1> -->
+							<p>
+								sistem integrasi alat pemadam api pintar
+							</p>
+						</div>
+						<div class="Button">
+							<a href="#"><button >GABUNG</button></a>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-8 imageClass green">
+						<div class="img1" >
+							<img src="img/header/5kg.png" id="imagE" >
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="Secondcontainer " >
+						<div class="row ">
+						<div class="col-8 col-md-4 col-lg-3 col-xl-2 col-xxl-2 mx-auto d-flex ImageThumb" style="justify-content: center;align-items: center;">
+							<img src="img/header/5kgicon.png" style="max-width: 64px;" onclick="ImageChange('img/header/5kg.png');ChangeBackground('#2F97F0')">
+							<img src="img/header/CO 6kgicon.png" style="max-width: 64px;" onclick="ImageChange('img/header/CO 6kg.png');ChangeBackground('#2F97F0')">
+							<img src="img/header/25kgicon.png" style="max-width: 64px;" onclick="ImageChange('img/header/25kg.png');ChangeBackground('#2F97F0')">
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fourthContainer"  id="fourthContain">
+		
+			</div>
 		</div>
 		
 		<div data-scroll class="secA secB">
@@ -380,6 +417,26 @@
 				prevEl: ".swiper-button-prev",
 			},
 		});
+	</script>
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script>
+		var ImageRemover=document.getElementById('imagE')
+		var ColorChange=document.getElementById('fourthContain')
+	 
+		function ImageChange(anything) {
+			ImageRemover.src= anything ;
+
+
+			
+		}
+		function ChangeBackground(color) {
+			ColorChange.style.background= color ;
+
+
+			
+		}
 	</script>
 </body>
 </html>
