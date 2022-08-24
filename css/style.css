@@ -71,7 +71,7 @@
     height:100vh;
     background-color: #2F97F0;
     z-index: -1;
-    clip-path: circle(650px at right 800px);
+    clip-path: circle(650px at right 700px);
 
 }
 .firstContainer{
@@ -79,8 +79,6 @@
 }
 .ImageThumb{
     margin-top: -25px;
-
-    
 }
 .ImageThumb img{
     transition: all 0.3s linear;

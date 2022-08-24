@@ -233,31 +233,7 @@
 		transform: scale(.7);
 		margin: 0 0 0 -5%;
 	}
-	.navBrandAnimate{
-		text-transform: uppercase;
-		position: absolute;
-		pointer-events: none;
-		/* top: 28%; */
-		color: black;
-		left: 50%;
-		z-index: 3;
-		font-size: 2.8rem;
-		transform: translateX(-50%);
-		opacity: 1;
-		font-family: 'Press Start 2P', cursive;
-	}
-	.navBrandAnimate.home{
-		/* opacity: 1; */
-		transform: translateX(-50%) scale(1);
-		transition: .7s ease-in-out;
-	}
-	.navBrandAnimate.sliding{
-		pointer-events: inherit;
-		top: 20px !important;
-		left: 12vw;
-		transform: scale(.5) translateY(-50%) ;
-		transition: .7s ease-in-out;
-	}
+	
 	.navLinks{
 		background: cadetblue;
 		display: grid;

@@ -7,8 +7,8 @@ secAP=document.querySelectorAll('.secA.secAnimate p'),
 secAP2=document.querySelector('.secA.secAnimate'),
 logopemapi = document.querySelector('.navItem'),
 navbar = document.querySelector('[data-navbar]'),
-navlink = document.querySelector('[data-navlink]'),
-pemapi = document.querySelector('.navBrandAnimate');
+navlink = document.querySelector('[data-navlink]');
+// pemapi = document.querySelector('.navBrandAnimate');
 
 // ! boolean scroll position
 let lastscroll = 0,
@@ -104,7 +104,7 @@ kontainer.addEventListener('scroll',()=>{
 	// console.log(kontainer.scrollTop);
 	// console.log(secAP2.dataset.scroll);
 	if(kontainer.scrollTop > 50 && kontainer.scrollTop < 400 && down == true && done==false){
-		pemapi.classList.add('sliding', 'home');
+		// pemapi.classList.add('sliding', 'home');
 		secAP.forEach(el => {
 			el.style.color='black';
 			el.style.transition='.5s';
@@ -114,7 +114,7 @@ kontainer.addEventListener('scroll',()=>{
 	}else if(kontainer.scrollTop < 400 && down == false && done==true){
 		// pemapi.classList.add('home');
 		// navlink.forEach(e=>e.classList.remove('txtblack'));
-		pemapi.classList.remove('sliding');
+		// pemapi.classList.remove('sliding');
 		done=false;
 	};
 	if(kontainer.scrollTop < 50){
