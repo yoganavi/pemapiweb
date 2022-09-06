@@ -27,29 +27,12 @@
 	/* /scroll bar */
 
 	/* navbar */
-	.navbar[data-navbar="trans"]{
-		background: transparent;
-		padding: .53rem 0 .5rem 0;
+	.navbar[data-navbar="transp"]{
+		background: transparent !important;
+		padding: .53rem 10% .5rem 10%;
 	}
 	.navLinks[data-navlink="white"] a{
 		color: white;
-	}
-	/* .navbar.home.scroll.bg-transp{
-		background: transparent;
-	} */
-	/* .navLink{
-		color: white !important;
-	} */
-	/* .navLink.txtblack{
-		color: black !important;
-	} */
-	.navbar img{
-		opacity: 0 !important;
-		transition: .3s;
-	}
-	.navbar img.scroll{
-		transition: .2s .8s;
-		opacity: 1 !important;
 	}
 	/* / navbar */
 

@@ -59,37 +59,6 @@ ScrollOut({
   },
 });
 
-let pageid = document.querySelector('#navbar').className,
-mycss = document.querySelector('.mycss'),
-secA = document.querySelector('.secA'),
-navbrand=document.querySelector('.navBrand'),
-tekskartu=document.querySelectorAll('.kartu p.fadeInDown'),
-navimg=document.querySelector('.navImg');
-
-navbrand.innerHTML='pemapi';
-navimg.classList.add('show');
-window.addEventListener('scroll',()=>{
-	if(window.scrollY > 50){
-		document.querySelector('.navbar').classList.add('scroll');
-		secA.classList.remove('mTop');
-		navbrand.classList.add('scroll');
-		navimg.classList.add('scroll3');
-	}else{
-		document.querySelector('.navbar').classList.remove('scroll');
-		secA.classList.remove('mTop');
-		secA.classList.add('mTop');
-		navbrand.classList.remove('scroll');
-		navimg.classList.remove('scroll3');
-	};
-});
-
-tekskartu.forEach((aa,i) => {
-	aa.style.animationDelay=i*0.2+'s'
-	aa.style.animationDuration='.4s'
-});
-
-
-
 // const proses=(aa)=>{
 // 	const timer = aa===1? 3000 : aa===2? 1000 : aa;
 // 	// return new Promise((resolve,reject)=>{

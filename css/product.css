@@ -100,9 +100,7 @@
 	}
 	.seca1 .row{
 		display: flex;
-		/* height: 230px; */
-		/* border-top: 1px solid black; */
-		/* border-bottom: 1px solid black; */
+		flex-wrap: wrap;
 	}
 	.seca1 .row .col{
 		border-radius: 12px;
@@ -427,6 +425,16 @@
 		transform: rotate(0deg) translateX(-10%) translateY(10%);
 		position: absolute;
 	}
+	.seca1 .a11a{
+		order: 1;	
+	}
+	.seca1 .a11b{
+		order: 3;	
+	}
+	.seca1 .a11c{
+		order: 2;	
+	}
+
 	.b1 .judul{
 		font-size: var(--fsL);
 	}
@@ -494,7 +502,7 @@
 /* !---------------------------------------------------------------------- */
 /* !---------------------------------------------------------------------- */
 /* !--------------------------------NORMAL PONSEL-------------------------------------- */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 625px){
 	html{
 		font-size: var(--tabfontsize);
 	}
@@ -571,7 +579,23 @@
 		transform: rotate(0deg) translateX(-10%) translateY(10%);
 		position: absolute;
 	}
-
+	.seca1 .row .col .judul{
+		font-size: x-large;
+		font-weight: 400 !important;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.seca1 .row .col p{
+		text-align: center;
+		text-transform: capitalize;
+		font-size: small;
+	}
+	.seca1 .row .col i{
+		width: 100%;
+		font-size: 3.2rem;
+		text-align: center;
+	}
+	
 	.secB{
 			margin: 10rem 0 0 0;
 	}

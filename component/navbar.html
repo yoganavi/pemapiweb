@@ -11,31 +11,33 @@
 
 	</div> -->
 	<div data-navbar class="navbar">
-		<img class="navItem navImg" src="/img/logo/PNG LOGO DAN STAMPLE/logo-resize.webp" alt="">
-		<!-- <img class="navItem navImg" src="/img/logo/no 2.png" alt=""> -->
-		<!-- <img class="navItem navImg" src="/img/logo/no 3.png" alt=""> -->
+		<img class="logo" src="/img/logo/PNG LOGO DAN STAMPLE/logo-resize.webp" alt="">
 		<a href="/" class="navItem navBrand">
-
+			PEMAPI
 		</a>
-		<div class="headnavmobile">
+		<!-- <div class="headnavmobile">
 			<p class="teks">
 				PEMAPI
 			</p>
-			<i class="fas fa-bars hambmenu"></i>
-		</div>
+		</div> -->
+		<i class="fas fa-bars hambmenu hide-on-med-and-up"></i>
 		<div data-navlink class="navItem navLinks">
 			<div class="navLinkWrap">
 				<a href="/pages/pemapi-app.html" class="navLink pemapi"><i class="fas fa-mobile-alt"></i>pemapi app</a>
 				<a href="/index.html" class="navLink home"><i class="fa-solid fa-house"></i>home</a>
+				<div class="hover"></div>
 			</div>
 			<div class="navLinkWrap">
 				<a href="/pages/product.html" class="navLink">product</a>
+				<div class="hover"></div>
 			</div>
 			<div class="navLinkWrap">
 				<a href="" class="navLink">news</a>
+				<div class="hover"></div>
 			</div>
 			<div class="navLinkWrap">
 				<a href="/pages/contact-us2.html" class="navLink">contact us</a>
+				<div class="hover"></div>
 			</div>
 			<!-- <div class="navLinkWrap">
 				<a href="" class="navLink"><i class="fas fa-shopping-bag"></i>shop</a>
@@ -49,15 +51,37 @@
 		let scriptselect=document.querySelector('.scriptselect'),
 		navLinks = document.querySelector('.navLinks'),
 		hambmenu = document.querySelector('.hambmenu'),		
-		pageid = document.querySelector('#navbar').className;
-
-		if(pageid!='home'){scriptselect.src='/js/navbar2.js?v=1'};
-		if(pageid==='contact-us'){scriptselect.src='/js/contactus.js?v=1'};		
-		if(pageid==='pemapi-app'){scriptselect.src='/js/pemapi-app.js?v=1'};		
+		pageid = document.querySelector('#navbar').className,
+		navbar = document.querySelector('[data-navbar]'),
+		navLinkWrap = document.querySelectorAll('.navLinkWrap .hover');
+		
+		// switch js for every page
+		if(pageid=='home'){scriptselect.src='/js/home.js?v=1'};
+		if(pageid=='product'){
+			navLinkWrap[1].classList.add('active');
+			scriptselect.src='/js/product.js?v=1';
+		};
+		if(pageid==='contact-us'){
+			scriptselect.src='/js/contactus.js?v=1';
+			navLinkWrap[3].classList.add('active');
+		};		
+		if(pageid==='pemapi-app'){
+			scriptselect.src='/js/pemapi-app.js?v=1';
+		};		
 		
 		hambmenu.addEventListener('click',()=>{
 			navLinks.classList.toggle('show');
 		});
+
+		window.addEventListener('scroll',()=>{
+			// console.log(window.scrollY);
+			if(window.scrollY > 100){
+				navbar.dataset.navbar="shrink";
+			}else if(window.scrollY < 300){
+				navbar.dataset.navbar="";
+			}
+		})
+
 	</script>
 	<script class="scriptselect" src="/js/navbar.js?v=1"></script>
 </body>
