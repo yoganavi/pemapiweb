@@ -105,6 +105,20 @@
 .headnavmobile{
 	display: none;
 }
+.navbarWA{
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	max-width: min(35%,150px);
+	z-index: 4;
+	transition: .3s;
+}
+.navbarWA img{
+	width: 100%;
+}
+.navbarWA:hover{
+	transform: scale(1.1);
+}
 
 /* !---------------------------------------------------------------------- */
 /* !---------------------------------------------------------------------- */
@@ -164,7 +178,7 @@
 		margin-left: 0%;
 	}
 	.navBrand{
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		text-transform: uppercase;
 		color: whitesmoke;
 		margin: 0 0 0 5%;
@@ -202,11 +216,10 @@
 	}
 	.navLinkWrap a{
 		/* border: 1px solid black; */
+		font-size: medium;
 		text-transform: capitalize;
-		/* font-weight: bold; */
 		text-decoration: none;
-		/* color: black; */
-			color: whitesmoke;
+		color: whitesmoke;
 		height: 50px;
 		display: flex;
 		align-items: center;

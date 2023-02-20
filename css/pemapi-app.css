@@ -27,7 +27,13 @@
 	/* /scroll bar */
 
 	/* navbar */
-	.navbar{
+	.navLinkWrap .navLink{
+		color: white;
+	}
+	.navbar[data-navbar="shrink"] .navLinkWrap .navLink{
+		color: black;
+	}
+	/* .navbar{
 		background: transparent !important;
 	}
 	.navLinkWrap .navLink{
@@ -47,7 +53,7 @@
 	}
 	.navLink.home{
 		display: inline-flex !important;
-	}
+	} */
 	/* / navbar */
 
 	.seca{
