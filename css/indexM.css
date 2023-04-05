@@ -416,6 +416,22 @@ bottom: 15px;
 	.secA1 .a3 img:hover{
 			transform: translateY(-10px);
 	}
+	.secA.secI .i1 p{
+	font-size: x-large;
+	padding: 0 5%;
+	font-weight: 500;
+	line-height: 30px;
+	transform: translateY(60vh);
+	}
+	.secA.secI .i1 .i1a[data-scroll='in']{
+		transform: translateY(60vh);
+		transition: .7s 2s;
+	}
+	.i2 img.animate__i2img[data-scroll='in']{
+		width: 73%;
+		transform: translateX(-30%) rotate(3deg);
+		transition: .4s .9s;
+	}
 
 	.secB .b2::before{
 		content: '';
